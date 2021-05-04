@@ -1,0 +1,318 @@
+// 色定義
+// Baseカラー(ボタン)
+$BaseColor_Button_Main: #FF8308;
+$BaseColor_Button_Select: #276FEA;
+$BaseColor_Button_Special: #279FEA;
+$BaseColor_Button_Main_Line: #CC6906;
+$BaseColor_Button_Select_Line: #9FC2FF;
+$BaseColor_Button_Special_Line: #84D0FF;
+$BaseColor_Button_Disabled: #E0E0E0;
+$BaseColor_Button_Disabled_Line: #BFBFBF;
+// Baseカラー(その他)
+$BaseColor_Navigation: #13A647;
+$BaseColor_Error: #E51D03;
+$BaseColor_PageTitle_BackGround: #FFFFFF;
+$BaseColor_Header_BackGround: #F0F0F0;
+$BaseColor_Contents_BackGround: #F0F0F0;
+$BaseColor_Footer_BackGround: #E0E0E0;
+$BaseColor_System_Admin_Header_BackGround: #333333;
+$BaseColor_Line: #BFBFBF;
+$BaseColor_Balloon_BackGround: #DEE6F5;
+$BaseColor_Infomation_BackGround: #E7F7ED;
+$BaseColor_Emphasis: #FFE0B7;
+$BaseColor_Overlay: #276FEA;
+// Baseカラー（テキスト）
+$BaseColor_Text_Plan: #333333;
+$BaseColor_Text_Annotation: #888888;
+$BaseColor_Text_Error: #E51D03;
+$BaseColor_Text_White: #FFFFFF;
+$BaseColor_Text_Disabled: #BFBFBF;
+//background-color
+$back-color-white: #FFFFFF;
+
+// フォントサイズ
+$FontSize_DoorPage: 64px;
+$FontSize_Headline: 48px;
+$FontSize_Balloon_Button: 40px;
+$FontSize_Large: 36px;
+$FontSize_Medium: 28px;
+$FontSize_Small: 24px;
+// フォントウェイト
+$FontWeight_Bold : bold;
+
+// ボタン共通
+// ※ボタンカーブ（高さ120px以上で45px）
+$CommonBtnCurveMax: 45px;
+// ※ボタンカーブ（高さ120px未満で 高さ*0.375）
+$CommonBtnCurveMin: 0.375;
+$CommonBtnBorderWidth: 6px;
+$CommonBtnShadow: 0px 6px 0px rgba(0, 0, 0, .32);
+// デフォルトフォントサイズ
+$CommonBtnDefaultFontSize: $FontSize_Balloon_Button;
+// 注記フォントサイズ
+$CommonBtnNoteFontSize: $FontSize_Small;
+
+// キーボード色変数
+$KeyboardBackgroundColor: $BaseColor_Button_Select;
+$KeyboardBorderColor: $BaseColor_Button_Select_Line;
+$KeyboardBoxShadowColor: $CommonBtnShadow;
+$keyboardSpecialFontColor: $KeyboardBackgroundColor;
+$keyboardSpecialBackgroundColor : $BaseColor_PageTitle_BackGround;
+$keyboardSpecialBorderColor : $BaseColor_Line;
+$KeyboardDefinitionFontColor: #FFFFFF;
+$KeyboardDefinitionBackgroundColor: #FF980B;
+$KeyboardDefinitionBorderColor : #CC6906;
+$KeyboardConversionBackgroundColor: #279FEA;
+$KeyboardConversionBorderColor :#84D0FF;
+//キーボードフォントサイズ
+$KeyboardFontSize: $CommonBtnDefaultFontSize;
+
+// インプット
+$InputAreaBackgroundColor : $BaseColor_PageTitle_BackGround;
+$InputAreaBorderColor :#dddddd;
+$InputAreaActiveColor : $BaseColor_Button_Select;
+$InputAreaErrorColor : $BaseColor_Error;
+$InputAreaErrorBoxShadowColor  : 0px 0px 10px rgba(229,29,3,0.8);
+$InputAreaActiveBoxShadowColor : 0px 0px 10px rgba(102, 178, 196, 0.6);
+$InputAreaBorderWidth: 4px;
+$InputAreaBorderStyle: solid;
+$InputAreaBorderRadius: 16px;
+$InputAreaHeight: 96px;
+$InputAreaLineHeight: calc(#{$InputAreaHeight} - #{$InputAreaBorderWidth} - #{$InputAreaBorderWidth});
+
+// ステッパー
+$SteppedBackColor: $BaseColor_Navigation;
+$SteppedBorderWidth: 4px;
+$SteppedBorderStyle: solid;
+$SteppedBorderColor: $BaseColor_Navigation;
+$SteppedBorderRadius: 28px;
+$NormalStepFontColor: $BaseColor_Navigation;
+$NormalStepBackColor: $BaseColor_PageTitle_BackGround;
+$NormalStepBorderColor: $BaseColor_PageTitle_BackGround;
+$SteppedFontColor: $BaseColor_PageTitle_BackGround;
+
+// スクロール
+$ScrollWidth: 16px;
+$ScrollColor: #888888;
+$ScrollBackgroundColor: $BaseColor_PageTitle_BackGround;
+$ScrollMargin: 1.5rem;
+$ScrollAdjustHeight: calc(#{$ScrollMargin} * 2);
+$ScrollBackgroundColorBgGray: $BaseColor_Contents_BackGround;
+
+// バルーン
+$BalloonBoxWidth: 1260px;
+$BalloonBoxMinHeight: 160px;
+$BalloonBoxMaxHeight: 244px;
+$BalloonTextBoxBackgroundColor: $BaseColor_PageTitle_BackGround;
+$BalloonTextBoxHeightSingeLine: 195px;
+$BalloonTextBoxHeightTwoLine: 230px;
+$BalloonArrowBoxColor : $BaseColor_Balloon_BackGround;
+$BalloonDetailColor : $BaseColor_Button_Select;
+$BalloonDetailBackgroundColor : $BaseColor_PageTitle_BackGround;
+$BalloonDetailBorderColor : $BaseColor_Line;
+$BalloonDetailBorderWidth : $CommonBtnBorderWidth;
+$BalloonDetailBorderStyle : solid;
+$BalloonDetailBorderRadius : 20px;
+$BalloonDetailBoxShadow : $CommonBtnShadow;
+
+// フッターアイコン
+$footer_end_icon: '~@/assets/image/icons/cross2.png';
+$footer_next_enabled_icon: '~@/assets/image/icons/arw_next1.png';
+$footer_next_disabled_icon: '~@/assets/image/icons/arw_next2.png';
+$footer_prev_enabled_icon: '~@/assets/image/icons/arw_return1.png';
+$footer_prev_disabled_icon: '~@/assets/image/icons/arw_return2.png';
+// フッターボタンカラー
+$FooterShadowColor : $CommonBtnShadow;
+$FooterPrevColor : $BaseColor_Button_Select;
+$FooterPrevBackColor : #FFFFFF;
+$FooterPrevBorderColor : $BaseColor_Line;
+$FooterNextColor : $BaseColor_Text_White;
+$FooterNextBackColor : $BaseColor_Button_Main;
+$FooterNextBorderColor : $BaseColor_Button_Main_Line;
+// フッターボタンその他
+$FooterBorderSize: $CommonBtnBorderWidth;
+$FooterBorderStyle: solid;
+$FooterHeight: 110px;
+$FooterBorderRadius: calc(#{$FooterHeight} * #{$CommonBtnCurveMin});
+$FooterFontSize: $FontSize_Balloon_Button;
+$FooterIconPosition: 25px;
+$FooterTextMargin: 57px;
+
+// チェックボタン共通
+$CheckBtnBackColor: $BaseColor_PageTitle_BackGround;
+$CheckBtnBorderColor: $BaseColor_Line;
+$CheckBtnShadowColor: $CommonBtnShadow;
+$CheckBtnIconUnchecked: '~@/assets/image/icons/circle1.png';
+$CheckBtnBorderSize: $CommonBtnBorderWidth;
+$CheckBtnBorderStyle: solid;
+$CheckBtnHeight: 90px;
+$CheckBtnBorderRadius: $CommonBtnCurveMax;
+$CheckBtnFontSize: $FontSize_Balloon_Button;
+$CheckBtnFontColor: $BaseColor_Text_Plan;
+
+$CheckBtnActiveFontColor: $BaseColor_PageTitle_BackGround;
+$CheckBtnActiveBackColor: $BaseColor_Button_Select;
+$CheckBtnActiveBorderColor: $BaseColor_Button_Select_Line;
+$CheckBtnIconActive: '~@/assets/image/icons/selecting.png';
+$CheckBtnIconChecked: '~@/assets/image/icons/check2.png';
+
+// チェックボタン（横長サイズ）
+$CheckBtnLargeIconSize: $FontSize_Balloon_Button;
+$CheckBtnLargeTextPadding: calc(#{$CheckBtnLargeIconSize} + 10px);
+
+// チェックボタン（横長サイズ_テキスト1行時）
+$CheckBtnSingleTextMinWidth: 330px;
+$CheckBtnSingleTextMaxWidth: 600px;
+$CheckBtnSingleTextHeight: 130px;
+
+// チェックボタン（横長サイズ_テキスト複数行時）
+$CheckBtnMultipleTextWidth: 600px;
+$CheckBtnMultipleTextHeight: 200px;
+$CheckBtnMultipleTextIconTopPosition: 28px;
+$CheckBtnMultipleTextIconleftPosition: 24px;
+$CheckBtnMultipleTextSubTextFontSize: $FontSize_Small;
+$CheckBtnMultipleTextPadding: calc(#{$CheckBtnFontSize} + 13px);
+$CheckBtnDetailTextFontSize: $FontSize_Medium;
+$CheckBtnDetailTextFontColor: $BaseColor_Text_Annotation;
+
+// チェックボタン（正方形サイズ）
+$CheckBtnSizeSquareWidth: 320px;
+$CheckBtnSizeSquareHeight: 280px;
+$CheckBtnSquareIconSize: 40px;
+$CheckedBtnSquareIconSize: 40px;
+$CheckBtnSquareFontColor: $BaseColor_Button_Select;
+$CheckBtnSquareSubTextFontSize: $FontSize_Medium;
+$CheckBtnSquareSubTextFontColor: $BaseColor_Text_Plan;
+$CheckBtnSquareActiveFontColor: $BaseColor_Button_Select_Line;
+$CheckBtnSquareActiveSubTextFontColor: #fff;
+
+// チェックボタン（リボン）
+$CheckBtnRibbonFontColor: #fff;
+$CheckBtnRibbonBackColor: #E31D02;
+$CheckBtnRibbonWidth: 110px;
+$CheckBtnRibbonHight: 120px;
+$CheckBtnRibbonFontSize: 16px;
+$CheckBtnRibbonInnerWidthSize: 147px;
+$CheckBtnRibbonInnerHeightSize: 5px 0;
+
+// チェックボタン（動画時間）
+$CheckBtnMovieTimeWidth: 68px;
+$CheckBtnMovieTimeHeight: 38px;
+$CheckBtnMovieTimeFontSize: 20px;
+$CheckBtnMovieTimeFontColor: #fff;
+$CheckBtnMovieTimeBackColor: #5c5c5c;
+$CheckBtnMovieTimeBorderRadius: 8px;
+$CheckBtnMovieTimePosition: 15px;
+
+// プライマリーボタン共通
+$PrimaryBtnMaxWidth: 820px;
+$PrimaryBtnMinWidth: 330px;
+$PrimaryBtnHeight: 120px;
+$PrimaryBtnBoxShadow: $CommonBtnShadow;
+$PrimaryBtnMainTextFontSize: $CommonBtnDefaultFontSize;
+$PrimaryBtnBorderSize: 6px;
+$PrimaryBtnBorderStyle: solid;
+$PrimaryBtnBorderRadius: $CommonBtnCurveMax;
+$PrimaryBtnPaddingYSize: 1.5rem;
+$PrimaryBtnPaddingXSize: 4rem;
+
+// ビデオ全画面表示ボタン
+$VideoFullScreenBtnHeight: 70px;
+
+// トグルボタン
+$SwitchButtonCircleColor : #ffffff;
+$SwitchActiveColor : #276fea;
+$SwitchNotActiveColor : #878787;
+$SwitchContainerColor : #bfbfbf;
+
+// モーダル
+$ModalBackColor: rgba($BaseColor_Overlay, 0.5);
+$BackGroundColor: #FFFFFF;
+$ModalBorderRadius: 16px;
+$BtnColor: $BaseColor_Overlay;
+$BtnIconCross: '~@/assets/image/icons/cross1.png';
+$BtnIconSize: 32px;
+
+// ミックスイン flexbox
+@mixin flexBox($justifyContent:center, $alignItems:center, $alignContent:center) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  align-content: $alignContent;
+}
+
+// ミックスイン detail
+@mixin detailBtn {
+  background-color: $BalloonDetailBackgroundColor;
+  border: $CommonBtnBorderWidth solid $BalloonDetailBorderColor;
+  border-radius: calc(58px * #{$CommonBtnCurveMin});
+  box-shadow: $BalloonDetailBoxShadow;
+  font-weight: bold;
+  &:active {
+    animation: $CommonBtnTapInteraction;
+    background-color: $BalloonDetailBackgroundColor !important;
+    border: $CommonBtnBorderWidth solid $BalloonDetailBorderColor !important;
+    box-shadow: $BalloonDetailBoxShadow !important;
+  }
+  &-btn {
+    color: $BalloonDetailColor;
+    font-size: $CommonBtnNoteFontSize;
+  }
+}
+
+//　操作案内用緑枠
+@mixin operationBorder {
+  background-color: $back-color-white;
+  border: 8px solid $BaseColor_Navigation;
+  z-index: 10000;
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+// アニメーションの設定
+@keyframes transformScale {
+  0% {
+    transform: scale(1.0);
+  }
+  25% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0.5;
+  }
+  2% {
+    opacity: 1;
+  }
+  48% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0;
+  }
+  98% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+// ステッパーのインタラクション
+$CommonSteppedInteraction: 0.3s;
+// ボタン選択切り替え時のインタラクション
+$CommonBtnSwitchInteraction: 0.2s;
+// ボタンタップ時のインタラクション
+$CommonBtnTapInteraction: transformScale 0.2s linear 0s;
+// トグルボタン切り替え時のインタラクション
+$CommonSwitchInteraction: 0.3s linear;
+// インプットフォーカス時のインタラクション
+$CommonInputAreaInteraction: 0.3s;
+// インプットフォーカス時のカーソルのインタラクション
+$CommonInputAreaCursorInteraction: blink 1.4s linear infinite;
