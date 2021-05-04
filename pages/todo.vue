@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>TODOリスト</h1>
+    <hoge-button :color="`primary`" :title="`test`"/>
     <table>
       <tr>
         <th>ID</th>
@@ -18,26 +19,37 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue'
-  import { AxiosError } from 'axios'
-  import { TodoStore } from '~/store'
+import Vue from 'vue'
+import { AxiosError } from 'axios'
+import { TodoStore } from '~/store'
+import HogeButton from '~/components/hoge-button.vue'
+import { Component } from 'vue-property-decorator'
 
-  export default Vue.extend({
-    async asyncData({ error }) {
-        await TodoStore.fetchTodoes().catch((error: AxiosError) => {
-          console.log(error)
-          // error({
-          //   statusCode: error.response?.status,
-          //   message: error.response?.statusText
-          // })
-        })
-      },
-    computed: {
-      todos() {
-        return TodoStore.getTodoes
-      }
-    }
-  })
+@Component({
+  components: {
+    HogeButton
+  }
+})
+export default class Todo extends Vue {
+
+  mounted (): void {
+    this.fetchData()
+  }
+
+  async fetchData() {
+    await TodoStore.fetchTodoes().catch((error: AxiosError) => {
+      console.log(error)
+      // error({
+      //   statusCode: error.response?.status,
+      //   message: error.response?.statusText
+      // })
+    })
+  }
+  get todos() {
+    return TodoStore.getTodoes
+  }
+}
+
 </script>
 <style lang="scss" scoped>
   h1 {
